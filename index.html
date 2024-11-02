@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Academic Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="login-page" class="page">
+    <form id="login-form">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </form>
+  </div>
+
+  <!-- Signup Page -->
+  <div id="signup-page" class="page hidden">
+    <form id="signup-form">
+      <h2>Create an Account</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </form>
+  </div>
+
+  <!-- Home Page -->
+  <div id="home-page" class="page hidden">
+    <nav>
+      <ul>
+        <li><a href="#" class="section" data-section="education">Education</a></li>
+        <li><a href="#" class="section" data-section="projects">Projects</a></li>
+        <li><a href="#" class="section" data-section="internships">Internships</a></li>
+        <li><a href="#" class="section" data-section="previous-questions">Previous Year Questions</a></li>
+        <li><a href="#" class="section" data-section="post-query">Post Your Query</a></li>
+        <li><a href="#" class="section" data-section="notes">Notes Upload</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <h2>Welcome to the Student Academic Portal</h2>
+      <p>Select an option from the menu to explore resources.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
